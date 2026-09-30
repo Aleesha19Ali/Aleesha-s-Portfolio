@@ -3,10 +3,12 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
+import Courses from './components/Courses';
 import Experience from './components/Experience';
 import Projects from './components/Project';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
 
@@ -17,7 +19,7 @@ export default function App() {
     location: 'Islamabad, Pakistan',
     email: 'aleeshaali048@gmail.com',
     github: 'https://github.com/Aleesha19Ali',
-    linkedin: 'https://linkedin.com',
+    linkedin: 'https://www.linkedin.com/in/aleesha-ali-3bb454307/?isSelfProfile=true',
     bio: "I am a dedicated web developer focused on full-stack JavaScript development. I build interactive frontends with React and Tailwind CSS, along with structured backends using Node.js, Express, and MongoDB. Constantly exploring modern frameworks and best practices to build production-grade web solutions.",
     availability: 'Available for Opportunities & Internships',
   };
@@ -38,6 +40,7 @@ export default function App() {
         <Hero profile={profile} darkMode={darkMode} />
         <About profile={profile} darkMode={darkMode} />
         <Skills darkMode={darkMode} />
+        <Courses darkMode={darkMode} />
         <Projects darkMode={darkMode} />
         <Experience darkMode={darkMode} />
         <Contact darkMode={darkMode} />
